@@ -61,6 +61,18 @@ int main() {
 
         }
 
+        // We can now begin drawing to our window.
+        // You want to do this as, Clear -> Draw -> Display
+        // Clear the current frame.
+        window.clear(sf::Color::Black);
+
+        // Draw logic for frame.
+        sf::RectangleShape line (sf::Vector2f(800, 5));
+        line.setPosition(0, 20);
+        window.draw(line);
+
+        // Display frame.
+        window.display();
 
     }
 
